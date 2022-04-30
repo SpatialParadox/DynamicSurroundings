@@ -22,6 +22,8 @@ public class DynamicSurroundingsForge {
         EventBuses.registerModEventBus(DynamicSurroundings.MOD_ID, eventBus);
         eventBus.addListener(this::onClientLoad);
 
+        DynamicSurroundings.init();
+
         ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class,
                 () -> new IExtensionPoint.DisplayTest(() -> NetworkConstants.IGNORESERVERONLY, (a, b) -> true));
 

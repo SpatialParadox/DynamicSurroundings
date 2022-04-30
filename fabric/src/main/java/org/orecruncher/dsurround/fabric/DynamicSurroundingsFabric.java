@@ -6,6 +6,7 @@ import org.orecruncher.dsurround.DynamicSurroundings;
 public class DynamicSurroundingsFabric implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        DynamicSurroundings.init();
         DynamicSurroundings.onClientLoad();
     }
 }

@@ -31,6 +31,10 @@ public class DynamicSurroundings {
 
     public static String BRANDING;
 
+    public static void init() {
+        ClientLifecycleEvent.CLIENT_STARTED.register(DynamicSurroundings::onClientStarted);
+    }
+
     public static void onClientLoad() {
         // Ensure all data paths exist
         createPath(CONFIG_PATH);
@@ -50,11 +54,13 @@ public class DynamicSurroundings {
         SoundEngineDiagnostics.register();
         BlockViewer.register();
 
+        LOGGER.info("Initialization complete");
+    }
+
+    public static void onClientStarted(MinecraftClient client) {
         refreshConfigs();
         Handlers.initialize();
         ParticleSheets.register();
-
-        LOGGER.info("Initialization complete");
     }
 
     public static void refreshConfigs() {
