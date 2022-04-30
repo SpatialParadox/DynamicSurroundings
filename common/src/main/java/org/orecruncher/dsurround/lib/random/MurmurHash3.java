@@ -1,7 +1,7 @@
 package org.orecruncher.dsurround.lib.random;
 
 /**
- * @see "http://sites.google.com/site/murmurhash/"
+ * @see <a href="http://sites.google.com/site/murmurhash/">http://sites.google.com/site/murmurhash/</a>
  */
 @SuppressWarnings("unused")
 public final class MurmurHash3 {

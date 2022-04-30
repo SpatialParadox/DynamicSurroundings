@@ -5,7 +5,7 @@ import org.orecruncher.dsurround.lib.math.MathStuff;
 import java.util.Random;
 
 /**
- * @see "http://xoroshiro.di.unimi.it/xoroshiro128plus.c"
+ * @see <a href="http://xoroshiro.di.unimi.it/xoroshiro128plus.c">http://xoroshiro.di.unimi.it/xoroshiro128plus.c</a>
  */
 public final class XorShiftRandom extends Random {
 
