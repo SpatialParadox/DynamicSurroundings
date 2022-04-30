@@ -173,19 +173,20 @@ public final class SoundFXProcessor {
     public static void doMonoConversion(final Source source, final StaticSound buffer) {
 
         // If disabled return
-        if (!DynamicSurroundings.CONFIG.enhancedSounds.enableMonoConversion)
+        if (!DynamicSurroundings.CONFIG.enhancedSounds.enableMonoConversion) {
             return;
+        }
 
         var ctx = ((ISourceContext) source).getData();
 
-        // If there is no context attached and conversion is enabled do it.  This can happen if enhanced sound
-        // processing is turned off.  If there is a context, make sure that the sound is attenuated.
-        if (ctx.isEmpty()) {
-            Conversion.convert(buffer);
-        } else {
+        // If there is a context, make sure that the sound is attenuated before converting
+        // The sound is not converted if there is no context - the reason for this being that non-positional sounds
+        // such as menu clicks are also converted when this is the case. This could be made configurable.
+        if (ctx.isPresent()) {
             var s = ctx.get().getSound();
-            if (s != null && s.getAttenuationType() != SoundInstance.AttenuationType.NONE && !s.isRelative())
+            if (s != null && s.getAttenuationType() != SoundInstance.AttenuationType.NONE && !s.isRelative()) {
                 Conversion.convert(buffer);
+            }
         }
     }
 

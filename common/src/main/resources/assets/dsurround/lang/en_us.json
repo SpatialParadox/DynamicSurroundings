@@ -111,7 +111,7 @@
   "dsurround.config.enhancedSounds.enableHRTF": "Enable HRTF",
   "dsurround.config.enhancedSounds.enableHRTF.tooltip": "Enable HRTF (Head Related Transfer Function) sound processing if OpenAL feature is available.  If this option is disabled, HRTF will be as configured prior to the launch of Minecraft.",
   "dsurround.config.enhancedSounds.enableMonoConversion": "Enable Mono Conversion",
-  "dsurround.config.enhancedSounds.enableMonoConversion.tooltip": "Enable/disable on the fly conversion of stereo sounds to mono as needed.  This function will be active even though §eEnhanced Sound Processing§r may be disabled.",
+  "dsurround.config.enhancedSounds.enableMonoConversion.tooltip": "Enable/disable on the fly conversion of stereo sounds to mono as needed.  This function will not active if §eEnhanced Sound Processing§r is disabled.",
   "dsurround.config.enhancedSounds.backgroundThreadWorkers": "Background Worker Threads",
   "dsurround.config.enhancedSounds.backgroundThreadWorkers.tooltip": "Number of background threads to use for enhanced sound processing.  Do not arbitrarily change this value because it could impact performance.",
   "dsurround.config.enhancedSounds.enableOcclusionProcessing": "Enable Occlusion Processing",
