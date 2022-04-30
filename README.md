@@ -4,12 +4,15 @@ A Minecraft Mod that alters the fabric of Minecraft experience by weaving a tape
 This is an Architectury port that supports both Fabric and Forge, adapted from [this](https://github.com/ThexXTURBOXx/DynamicSurroundingsFabric)
 repository.
 
-It includes all the features of the original mod, with the exception being the version checker.
-It will not be added back - not many mods implement them, and there are mods available that
+Removed features:
+* **Version checker**: will not be added back as not many mods implement them, and there are mods 
+available that
 allow for update checks on mods that you have installed.
+* **Commands**: may be implemented again in the future, however I am not sure of any way to 
+(easily) implement client-side commands in Forge, as Architectury does not provide any API to do so.
 
 **Requirements**
-* JAVA 16+ (I am using Adoptium https://adoptium.net/)
+* Java 16+
 * [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
 * 100% client side; no server side deployment needed
 
@@ -28,7 +31,6 @@ allow for update checks on mods that you have installed.
     * Hot blocks are things like Lava and Magma.
 * Waterfall sound and visual effect - will trigger when flowing water is detected nearby.
 * Replace Minecraft's thunder sound with improved versions.
-* Various "DS" client side commands for dumping configuration information.  (These are currently used by me while developing.  I do plan on documenting at some point for general use.)
 * Custom debug HUD that can be accessed by key bind.  Moves the Dynamic Surroundings clutter out of the traditional F3 display.
 
 **Embedded Jars**
