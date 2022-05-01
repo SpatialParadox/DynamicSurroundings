@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "dsurround",
+  "version": "${version}",
+  "name": "Dynamic Surroundings",
+  "description": "Alters the \\u00a7ffabric\\u00a7r of Minecraft experience by \\u00a7fweaving\\u00a7r a \\u00a7ftapestry\\u00a7r of \\u00a73sound\\u00a7r and \\u00a73visual\\u00a7r effects",
+  "authors": [
+    "OreCruncher"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SpatialParadox",
+    "sources": "https://github.com/SpatialParadox/DynamicSurroundings",
+    "issues": "https://github.com/SpatialParadox/DynamicSurroundings/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.orecruncher.dsurround.fabric.DynamicSurroundingsFabric"
+    ],
+    "modmenu": [
+      "org.orecruncher.dsurround.fabric.config.ModConfigMenu"
+    ]
+  },
+  "mixins": [
+    "dsurround-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.2.50"
+  }
+}

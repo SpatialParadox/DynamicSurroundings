@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+issueTrackerURL = "https://github.com/SpatialParadox/DynamicSurroundings/issues"
+license = "MIT"
+
+[[mods]]
+modId = "dsurround"
+version = "${version}"
+displayName = "Dynamic Surroundings"
+authors = "OreCruncher"
+description = '''
+Alters the \\u00a7ffabric\\u00a7r of Minecraft experience by \\u00a7fweaving\\u00a7r a \\u00a7ftapestry\\u00a7r of \\u00a73sound\\u00a7r and \\u00a73visual\\u00a7r effects
+'''
+logoFile = "icon.png"
+
+[[dependencies.dsurround]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dsurround]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dsurround]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.2.50,)"
+ordering = "AFTER"
+side = "BOTH"
