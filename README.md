@@ -1,4 +1,4 @@
-> ### Dynamic Surroundings: Fabric Edition
+> ### Dynamic Surroundings
 A Minecraft Mod that alters the fabric of Minecraft experience by weaving a tapestry of sound and visual effects.
 
 This is an Architectury port that supports both Fabric and Forge, adapted from [this](https://github.com/ThexXTURBOXx/DynamicSurroundingsFabric)
